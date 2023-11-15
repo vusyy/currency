@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code/style.css">
+    <title>Currency converter</title>
+</head>
+<body>
+    <header>
+<div class="container">
+    
+            <img src="images/bank.jpeg" alt="">
+            <nav>
+                <ul class="menu">
+                   <a href=""> <li class="selec">БАНК</li></a>
+                   <a href=""> <li>БИЗНЕС</li></a>
+                  <a href=""> <li>ИНВЕСТИЦИИ</li></a>
+                  <a href=""> <li>СТРАХОВАНИЕ</li></a>
+                  <a href=""> <li>МОБАЙЛ</li></a>
+                  <a href=""> <li>ПУТЕШЕСТВИЯ</li></a>
+                  <a href=""> <li>РАЗВЛЕЧЕНИЯ</li></a>
+                  <a href=""> <li><span><b>ВОЙТИ</b></span></li></a>
+                </ul>
+            </nav>
+            
+</div>
+    </header>
+    <main>
+        <h1>Конвертер валют онлайн</h1>
+<div class="all">
+            
+            <div class="left">
+                <p class="text">У меня есть </p>
+                <div id="fromCur" class="currency">
+                    <button id="RUB" class="from selected">RUB</button>
+                    <button id="USD" class="from">USD</button>
+                    <button id="EUR" class="from">EUR</button>
+                    <button id="GBP" class="from">GBP</button>
+                </div>
+                <div class="field1">
+                    <input  value="1" class="amo" min="0" type="number" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'">
+                    <p class="textfrom"></p>
+                </div>
+            </div>
+            <div class="right">
+                <p class="text">Хочу приобрести</p>
+                <div id="toCur" class="currency2">
+                    <button id="RUB" class="to">RUB</button>
+                    <button id="USD" class="to selected">USD</button>
+                    <button id="EUR" class="to">EUR</button>
+                    <button id="GBP" class="to">GBP</button>
+                </div>
+                <div class="field2">
+                    <input type="number" class="oma" min="0" onkeydown="javascript: return ['Backspace','Delete','ArrowLeft','ArrowRight'].includes(event.code) ? true : !isNaN(Number(event.key)) && event.code!=='Space'">
+                    <p class="texto"></p>
+                </div>
+            </div>
+    
+</div>
+    </main>
+    <script src="code/script.js"></script>
+</body>
+</html>
