@@ -55,8 +55,11 @@ async function Converter(type) {
                 apiUrl = `${apiUrlMain}/${apiKey}/pair/${toUser}/${from}/${amount}`
 
             }
+
+try {
             let response = await fetch(apiUrl);
             let data = await response.json();
+
 
             if (type == 'amo') {
                 if (data.conversion_result == undefined) {
@@ -90,7 +93,10 @@ async function Converter(type) {
             pTo.innerText = `1 ${toUser} = ${data3.conversion_result} ${from}`
 
             console.log(data3.conversion_result)
-
+        }
+        catch {
+            alert("Internet bağlantınızı yoxlayın")
+        }
       
         }
     }
