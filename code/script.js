@@ -30,7 +30,7 @@ let amo = document.querySelector('.amo')
 let oma = document.querySelector('.oma')
 let pFrom = document.querySelector('.textfrom')
 let pTo = document.querySelector('.texto')
-const apiKey = '11d60eac28f897bc35e745b5'
+const apiKey = 'd9d290b910b324b47c86a572'
 const apiUrlMain = `https://v6.exchangerate-api.com/v6`
 
 async function Converter(type) {
