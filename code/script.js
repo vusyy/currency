@@ -87,7 +87,7 @@ try {
 
             console.log(data2.conversion_result)
 
-            let apiUrlp2 = `${apiUrlMain}/${apiKey}/pair/${from}/${toUser}/1`
+            let apiUrlp2 = `${apiUrlMain}/${apiKey}/pair/${toUser}/${from}/1`
             let response3 = await fetch(apiUrlp2);
             let data3 = await response3.json();
             pTo.innerText = `1 ${toUser} = ${data3.conversion_result} ${from}`
